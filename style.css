@@ -1,0 +1,892 @@
+                    /* Common Codes */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ol,ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    line-height: 0.8;
+}
+
+.container {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+:root {
+    --white: #fff;
+    --primary: #FF9600;
+}
+
+.common_btn {   
+    padding: 20px 50px;
+    color: var(--white);
+    background-color: var(--primary);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: normal;
+    display: inline-block;
+    border-radius: 4px;
+    transition: all linear 0.3s;
+}
+
+.common_btn i {
+    margin-left: 5px;
+}
+
+.common_btn:hover {
+    color: var(--primary);
+    background-color: var(--white);
+}
+
+.sub_heading {
+    font-family: Yellowtail;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.heading {
+    color: #222;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: normal;
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-transform: capitalize;
+}
+
+.paragraph {
+    color: #222;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+                    /* Common Codes */
+                    
+                    /* Navbar Codes */
+
+#navbar {
+    background-color: transparent;
+    padding: 20px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}   
+
+
+.logo {
+    width: 20%;
+}
+
+.main {
+    width: 60%;
+}
+.nav_btn {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav_wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.main>ul {
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    align-items: center;
+}
+
+.main>ul li a {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-transform: capitalize;
+    transition: all linear 0.3s;
+}
+
+.main ul li a:hover {
+    color: var(--primary);
+}
+
+.main ul li a i{
+    margin-left: 7px;
+}
+
+.main ul li {
+    position: relative;
+}
+
+.dropdown {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear 0.3s;
+}
+
+.main ul li:hover .dropdown{
+    opacity: 1;
+    visibility: visible;
+}
+
+                    /* Navbar Codes */
+                    /* Banner Codes */
+#banner {
+    background: url("./images/banner.jpg");
+    padding: 320px 0 156px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -20px;
+    position: relative;
+}
+
+.banner_content {
+    text-align: center;
+}
+
+.banner_content h1 {
+    color: var(--white);
+    font-size: 72px;
+    font-weight: 700;
+    line-height: normal;
+    font-family: 'IBM Plex Sans', sans-serif;
+    width: 820px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner_btn {
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+    margin-top: 55px;
+}
+
+.banner_shape {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.banner_shape img {
+    width: 100%;
+    display: block;
+}
+
+                    /* Banner Codes */
+
+                    /* Adventure Codes */
+#adventure {
+    padding: 72px 0 80px 0 ;
+}
+
+.adventure_wrapper {
+    display: flex;
+    column-gap: 70px;
+}
+
+.adventure_content {
+    width: 600px;
+    padding: 20px 0;
+}
+
+.adventure_images {
+    width: 650px;
+    display: flex;
+    column-gap: 50px;
+    align-items: center;
+}
+
+.adventure_img_item {
+    width: 300px;
+    overflow: hidden;
+    border-radius: 5px;
+    height: 620px;
+}
+
+.adventure_img_item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.adventure_img_item:last-child {
+    height: 520px;
+}
+
+.adventure_content .sub_heading {
+    color: #14B9F1;
+}
+
+.adventure_content .heading {
+    margin-top: 5px;
+}
+
+.adventure_content p {
+    color: #222;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 62px;
+    position: relative;
+}
+
+.adventure_content p::after {
+    position: absolute;
+    content: "";
+    top: -40px;
+    left: 0;
+    width: 60px;
+    height: 5px;
+    background-color: red;
+}
+
+.adventure_content ul li {
+    margin-top: 45px;
+    color: #222;
+    font-family: IBM Plex Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.adventure_content ul li i {
+    margin-right: 23px;
+}
+
+.adventure_content a {
+    margin-top: 44px;
+}
+
+                    /* Adventure Codes */
+
+                    /* Rating Codes */
+
+#rating {
+    margin-bottom: 200px;
+}
+
+.rating_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+}                    
+.content_box_two {
+    width: 312px;
+    height: 225px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("./images/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.content_box {
+    border-radius: 10px;
+    background: #FFF4E5;
+
+}
+
+.content_box:nth-child(2) {
+    background: #E7FDE9;
+    border-radius: 10px;
+}
+.content_box:nth-child(3) {
+    border-radius: 10px;
+    background: #F2F2FD;
+}
+.content_box:nth-child(4) {
+    border-radius: 10px;
+    background: #FDF1F5;
+}
+
+
+
+.content_one h2 {
+    color: #222;
+    font-family: IBM Plex Sans;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.content_one p {
+    color: #222;
+    font-family: IBM Plex Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+                    /* Rating Codes */
+
+                    /* Sports Codes */
+
+#sports {
+    background-color: #0C3543;
+    position: relative;
+}
+
+.first_content .sub_heading {
+    color: var(--primary);
+}                   
+
+.first_content .heading {
+    color: var(--white);
+    width: 394px;
+    position: relative;
+    margin-top: 5px;
+}
+
+.first_content .heading::after {
+    position: absolute;
+    content: "";
+    bottom: -30px;
+    left: 0;
+    width: 60px;
+    height: 5px;
+    background-color: red;
+
+}
+
+.sports_content_wrapper {
+    display: flex;
+    column-gap: 165px;
+    padding-top: 102px;
+    padding-bottom: 100px;
+}
+
+.sports_content_wrapper .second_content p {
+    color: var(--white);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    width: 650px;
+    margin-top: 60px;
+}
+
+.sports_img_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 50px;
+    padding-bottom: 85px;
+}
+
+.sports_img_item {
+    width: 424px;
+    border-radius: 10px;
+    background-color: #0F4152;
+}
+
+.sports_img {
+    height: 365px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+.sports_img img {
+    object-fit: cover;
+}
+
+.sports_img_content {
+    text-align: center;
+}
+
+.sports_img_content h2 {
+    color: var(--white);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: normal;
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 26px 0;
+}
+
+.sports_img_content .paragraph {
+    color: var(--white);
+    padding-bottom: 32px;
+}
+
+.bottom_heading h2 {
+    padding-bottom: 100px;
+    color: var(--white);
+    text-align: center;
+    color: #FFF;
+    font-family: Arizonia;
+    font-size: 160px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.extreme_shape {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.extreme_shape img {
+    width: 100%;
+    display: block;
+}
+
+.sports_bg {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: 250px;
+}
+
+.sports_bg img {
+    width: 100%;
+}
+
+                    /* Sports Codes */
+
+                    /* Extreme Sports Codes */
+#extreme_sports {
+    background-color: var(--primary);
+}
+
+.extreme_contents {
+    text-align: center;
+    padding-top: 110px;
+}
+
+.extreme_contents .heading {
+    color: var(--white);
+    margin-bottom: 46px;;
+}
+
+.extreme_contents p{
+    color: var(--white);
+    text-align: center;
+    font-family: IBM Plex Sans;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 60px;
+}
+
+.extreme_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 26px;
+}
+
+.extreme_btn .common_btn {
+    background-color: #0C3543;
+    border: 1px solid #0C3543;
+    border-radius: 4px;
+
+}
+
+.extreme_btn .common_btn:hover {
+    background-color: var(--primary);
+    color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 4px;
+}
+
+.extreme_btn .common_btn i {
+    margin-right: 10px;
+}
+
+.extreme_btn {
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.extreme_img_item {
+    width: 424px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.extreme_img_item .img {
+    background: url("./images/R1.png");
+    background-repeat: no-repeat;
+}
+.extreme_img_item .img2 {
+    background: url("./images/R2.png");
+    background-repeat: no-repeat;
+}
+.extreme_img_item .img3 {
+    background: url("./images/R3.png");
+    background-repeat: no-repeat;
+}
+
+.extreme_img_item img {
+    height: 470px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.extreme_img_item .heading {
+    font-size: 40px;
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.extreme_img_item .paragraph {
+    color: #A0A0A0;
+    padding-bottom: 35px;
+    
+}
+
+.extreme_img_item .paragraph.two {
+    font-size: 30px;
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.extreme_img_item .texts {
+    position: absolute;
+    bottom: 12px;
+    left: 65px;
+}
+
+.line {
+    position: relative;
+}
+
+.line::after {
+    position: absolute;
+    content: "";
+    top: -80px;
+    left: 0px;
+    width: 285px;
+    background: #717171;
+    height: 1px;
+}
+
+.bottom {
+    display: flex;
+    column-gap: 20px;
+}
+
+
+.icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--white);
+    position: relative;
+}
+
+.icon i {
+    position: absolute;
+    top: 7px;
+    left: 10px;
+    width: 100%;
+}
+
+.extreme_wrapper {
+    display: flex;
+    gap: 25px;
+    padding-bottom: 10px;
+}
+
+
+                    /* Extreme Sports Codes */
+
+                    /* Choose Codes */
+#choose {
+    background-color: var(--white);
+}
+
+.choose_content {
+    text-align: center;
+    margin-top: 190px;
+}
+
+.choose_content .sub_heading {
+    color: #14B9F1;
+}
+
+.choose_content .heading {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.choose_content .heading::after {
+    position: absolute;
+    content: "";
+    bottom: -20px;
+    left: 620px;
+    background-color: #A0A0A0;
+    width: 80px;
+    height: 1px;
+}
+
+.choose_item_tings {
+    width: 312px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.choose_item_tings .choose_logo{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: #F2F2FD;
+    position: relative;
+    margin-bottom: 55px;
+}
+
+.choose_item_tings:nth-child(2) .choose_logo {
+    background-color: #E7FDE9;
+}
+.choose_item_tings:nth-child(3) .choose_logo {
+    background-color: #FFF4E5;
+}
+.choose_item_tings:nth-child(4) .choose_logo {
+    background-color: #FDF1F5;
+}
+
+.choose_item_tings .choose_logo img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+
+.choose_item_tings .heading {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.choose_wrapper {
+    display: flex;
+    gap: 25px;
+    padding: 20px 0 100px 0;
+}
+
+
+
+                    /* Choose Codes */
+
+                    /* News Codes */
+#news {
+    background-color: #F7F7F7;
+}
+
+.news_content_wrapper {
+    display: flex;
+    column-gap: 150px;
+    padding-top: 100px;
+}
+
+.news_content_wrapper .first_content .heading {
+    color: #000;
+}
+
+.news_content_wrapper .second_content p {
+    margin-top: 60px;
+    width: 600px;
+    font-size: 18px;
+    font-family: IBM Plex Sans;
+    font-weight: 400;
+}
+
+.news_img_item {
+    width: 424px;
+    border-radius: 10px;
+    background-color: var(--white);
+}
+
+.news_img {
+    height: 365px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+.news_img img {
+    object-fit: cover;
+}
+
+.news_img_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 50px;
+    padding-top: 100px;
+    padding-bottom: 85px;
+}
+
+.news_img_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.news_img_content .heading {
+    font-size: 28px;
+    width: 315px;
+    margin-top: -50px;
+    padding-bottom: 20px;
+}
+
+.news_img_content .paragraph {
+    font-size: 18px;
+    width: 378px;
+    padding-bottom: 45px;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.news_img_content a {
+    color: var(--primary);
+    color: #FF9600;
+    text-align: center;
+    font-family: IBM Plex Sans;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 30px;
+    padding-bottom: 35px;
+}
+
+.news_img_item:nth-child(2) .news_img_content .heading {
+    width: 343px;
+}
+.news_img_item:nth-child(3) .news_img_content .heading {
+    width: 353px;
+}
+
+                    /* News Codes */
+
+                    /* Sponsers Code */
+#sponser {
+    background-color: var(--white);
+}
+                   
+.sponser_wrapper .item_one {
+    width: 264px;
+    height: 264px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+.sponser_wrapper {
+    display: flex;
+    padding: 45px 0 45px 0;
+}
+
+
+                    /* Sponsers Code */
+
+                    /* Footer Code */
+#footer {
+    background: #0C3543;
+}
+
+.footer_box {
+    display: flex;
+    column-gap: 138px;
+    width: 1900px;
+    margin: 0 auto;
+}
+
+.footer_img {
+    width: 661px;
+    overflow: hidden;
+}
+
+.footer_img img {
+    object-fit: cover;
+}
+
+.footer_texts {
+    display: flex;
+    column-gap: 60px;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #C4C4C480;
+}
+
+.footer_content {
+    padding-top: 80px;
+}
+
+.footer_texts .paragraph {
+    color: var(--white);
+    width: 580px;
+}
+
+.footer_contact {
+    display: flex;
+    column-gap: 115px;
+    padding-top: 68px;
+}
+
+.footer_contact_text .heading {
+    color: var(--white);
+    font-size: 30px;
+    position: relative;
+}
+
+.footer_contact_text .heading::after {
+    position: absolute;
+    content: "";
+    bottom: -25px;
+    left: 0;
+    background-color: var(--white);
+    width: 60px;
+    height: 2px;
+}
+
+.footer_content_info .paragraph {
+    color: var(--white);
+    padding-bottom: 26px;
+}
+
+.footer_content .paragraph.last {
+    color: var(--white);
+    padding-top: 35px;
+}
+                    /* Footer Code */
