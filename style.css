@@ -544,11 +544,11 @@ h1,h2,h3,h4,h5,h6,p {
     background: url("./images/R1.png");
     background-repeat: no-repeat;
 }
-.extreme_img_item .img2 {
+.extreme_img_item:nth-child(2) .img {
     background: url("./images/R2.png");
     background-repeat: no-repeat;
 }
-.extreme_img_item .img3 {
+.extreme_img_item:nth-child(3) .img {
     background: url("./images/R3.png");
     background-repeat: no-repeat;
 }
