@@ -537,6 +537,7 @@ h1,h2,h3,h4,h5,h6,p {
     width: 424px;
     border-radius: 10px;
     position: relative;
+    overflow: hidden;
 }
 
 .extreme_img_item .img {
@@ -556,7 +557,6 @@ h1,h2,h3,h4,h5,h6,p {
     height: 470px;
     width: 100%;
     border-radius: 10px;
-    overflow: hidden;
     object-fit: cover;
 }
 
